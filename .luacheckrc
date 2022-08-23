@@ -1,7 +1,24 @@
 return {
-    exclude_files = { ".lua", "modules/JSON.lua", "lua_modules" },
+    exclude_files = { ".install", ".lua", ".luarocks", "modules/JSON.lua", "lua_modules" },
     files = {
         spec = { std = "+busted" },
     },
-    globals = { "clink", "rl_state", "rl", "settings", "log", "path" }
+    globals = {
+        "clink",
+        "error",
+        "log",
+        "os.getcwd",
+        "os.globfiles",
+        "os.isdir",
+        "os.setenv",
+        "path",
+        "pause",
+        "rl",
+        "rl_state",
+        "settings",
+        "string.explode",
+        "string.matchlen",
+        "unicode.fromcodepage",
+        "unicode.iter",
+    }
 }
